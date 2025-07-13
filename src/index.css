@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Switzer";
+  src: url("./assets/Switzer-Variable.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-family: "Switzer", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+}
