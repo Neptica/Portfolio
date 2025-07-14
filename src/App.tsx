@@ -5,7 +5,7 @@ import Experience from "./components/experience/experience";
 function App() {
   return (
     <>
-      <div className="flex justify-center w-screen h-full bg-radial from-slate-950 to-black text-gray-100 ">
+      <div className="flex justify-center w-screen h-full bg-radial from-slate-900 to-black text-gray-100 ">
         <div className="w-200">
           <Me />
 

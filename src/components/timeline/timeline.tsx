@@ -10,7 +10,8 @@ import TimelineOppositeContent, {
 import Typography from "@mui/material/Typography";
 import { styles } from "../links/links";
 
-const lineContentStyling = { m: "auto 0", pb: "35px" };
+const lineContentStyling = { m: "auto 0", pb: "24px", pt: "18px" };
+const oppositeContentStyling = { m: "19px 0" };
 const dotSize = {};
 const connectorStyle = { transform: "translateY(17px)" };
 
@@ -29,7 +30,7 @@ const TimeLine = ({ data }: { data: (string | string[])[][] }) => {
             <div className={styles}>
               <TimelineItem key={`${time}`}>
                 <TimelineOppositeContent
-                  sx={lineContentStyling}
+                  sx={oppositeContentStyling}
                   align="right"
                   variant="body2"
                 >
@@ -54,7 +55,7 @@ const TimeLine = ({ data }: { data: (string | string[])[][] }) => {
             <div className={styles}>
               <TimelineItem key={`${time}`}>
                 <TimelineOppositeContent
-                  sx={lineContentStyling}
+                  sx={oppositeContentStyling}
                   align="right"
                   variant="body2"
                 >
@@ -80,7 +81,7 @@ const TimeLine = ({ data }: { data: (string | string[])[][] }) => {
         return (
           <div className={styles}>
             <TimelineItem key={`${time}`}>
-              <TimelineOppositeContent sx={lineContentStyling}>
+              <TimelineOppositeContent sx={oppositeContentStyling}>
                 {time}
               </TimelineOppositeContent>
               <TimelineSeparator sx={connectorStyle}>

@@ -11,7 +11,13 @@ const sliderStyles = `absolute left-0 top-0 z-0 w-1/2 h-full bg-white opacity-30
 type contentDatum = (string | string[])[][];
 
 const workExp: contentDatum = [
-  ["Summer 2025", ["Concordia Plans", "Junior Software Developer"]],
+  ["Summer 2025", ["Concordia Plans", "Software Developer Intern"]],
+];
+
+const otherExp: contentDatum = [
+  ["2023-Present", ["Brightside Inc (FedEx)", "Delivery Driver"]],
+  ["2020-2023", ["Heide Farms", "Grain Cart Operator"]],
+  // ["2021", ["3M", "Tugger Operator"]],
 ];
 
 const education: contentDatum = [
@@ -46,6 +52,8 @@ const Experience = () => {
       <div className="flex justify-start w-full pt-4">
         <div style={{ display: bar ? "none" : "", width: "100%" }}>
           <TimeLine data={workExp} />
+          <hr />
+          <TimeLine data={otherExp} />
         </div>
         <div style={{ display: bar ? "" : "none", width: "100%" }}>
           <TimeLine data={education} />
